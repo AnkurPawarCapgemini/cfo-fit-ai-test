@@ -1,0 +1,529 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/fonts/Poppins-Regular.eot");
+  src: url("../public/fonts/Poppins-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../public/fonts/Poppins-Regular.woff") format("woff"),
+    url("../public/fonts/Poppins-Regular.ttf") format("truetype"),
+    url("../public/fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("../public/fonts/Poppins-SemiBold.eot");
+  src: url("../public/fonts/Poppins-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../public/fonts/Poppins-SemiBold.woff") format("woff"),
+    url("../public/fonts/Poppins-SemiBold.ttf") format("truetype"),
+    url("../public/fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-italic";
+  src: url("../public/fonts/Poppins-Italic.eot");
+  src: url("../public/fonts/Poppins-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Poppins-Italic.woff2") format("woff2"),
+    url("../public/fonts/Poppins-Italic.woff") format("woff"),
+    url("../public/fonts/Poppins-Italic.ttf") format("truetype"),
+    url("../public/fonts/Poppins-Italic.svg#Poppins-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsMediumItalic";
+  src: url("../public/fonts/Poppins-MediumItalic.eot");
+  src: url("../public/fonts/Poppins-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Poppins-MediumItalic.woff2") format("woff2"),
+    url("../public/fonts/Poppins-MediumItalic.woff") format("woff"),
+    url("../public/fonts/Poppins-MediumItalic.ttf") format("truetype"),
+    url("../public/fonts/Poppins-MediumItalic.svg#Poppins-MediumItalic")
+      format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("../public/fonts/Poppins-Medium.eot");
+  src: url("../public/fonts/Poppins-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../public/fonts/Poppins-Medium.woff") format("woff"),
+    url("../public/fonts/Poppins-Medium.ttf") format("truetype"),
+    url("../public/fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PoppinsBoldItalic";
+  src: url("../public/fonts/Poppins-SemiBoldItalic.eot");
+  src: url("../public/fonts/Poppins-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("../public/fonts/Poppins-SemiBoldItalic.woff") format("woff"),
+    url("../public/fonts/Poppins-SemiBoldItalic.ttf") format("truetype"),
+    url("../public/fonts/Poppins-SemiBoldItalic.svg#Poppins-SemiBoldItalic")
+      format("svg");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+.App {
+  text-align: center;
+}
+
+body,
+html {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins";
+  margin: 0;
+}
+
+.text-semibold {
+  font-family: "PoppinsBold";
+}
+
+p {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0070ad;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.btn-light {
+  padding: 3px 6px;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid #d7e5de;
+  box-shadow: 0px 1px 1px 0px #0000000d;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  width: calc(100% / 6); /* 100% / 7 columns */
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* General container for app */
+.app-container {
+  display: flex;
+}
+
+.sm-logo-div {
+  height: 64px;
+  width: 56px;
+  display: flex;
+  justify-content: center;
+}
+/* Sidebar styles */
+.sidebar {
+  width: 56px; /* Width when closed */
+  height: 100vh;
+  box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.07);
+  background-color: #333;
+
+  transition: width 0.3s ease;
+  z-index: 999;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 38px; /* Make room for the dots */
+}
+
+/* Make sure the dots are visible */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: black;
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: black;
+}
+
+/* Slick Slider Arrow Styling */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  z-index: 1;
+  cursor: pointer;
+  color: black; /* Set arrow color */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Add background to make them more visible */
+  border-radius: 50%; /* Round shape */
+}
+
+.slick-prev {
+  left: 10px; /* Position the left arrow */
+}
+
+.slick-next {
+  right: 10px; /* Position the right arrow */
+}
+
+/* Optional hover effect for arrows */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Slightly lighter background on hover */
+}
+
+/* Style for the arrow icon (left and right) */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px;
+  color: black; /* Arrow icon color */
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 999; /* Ensure arrows are on top of other elements */
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Slider container to hold dynamic height */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Individual slider item */
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Ensure the slider adapts to content size */
+.slick-slider {
+  max-height: none;
+  height: auto;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Allow slide height to be dynamic */
+}
+
+/* Chart and Table adjustments */
+.slider-item canvas, /* for Chart.js */
+.slider-item table {
+  width: 100%;
+  height: auto; /* Let charts and tables adapt their height */
+  max-height: 100%;
+}
+
+/* Text content should also adjust within the slide */
+.slider-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.sidebar.open {
+  width: 236px; /* Width when open */
+}
+
+/* Logo styles */
+.sidebar img {
+  padding: 1em;
+  width: 4em; /* Width when sidebar is closed */
+  transition: width 0.3s ease, padding 0.3s ease; /* Transition for width and padding */
+}
+
+.sidebar.open img {
+  width: 14.7em; /* Width when sidebar is open */
+  padding: 1em; /* Adjust padding as needed */
+}
+
+/* Sidebar nav ul styles */
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  /* align-items: center; */
+  margin: 0;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar menu item styles */
+.sidebar nav ul li {
+  padding: 5px 10px; /* Adjust padding for better alignment */
+}
+
+/* Menu link styles */
+.sidebar nav ul li a {
+  color: #64748b;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  padding: 5px;
+  align-items: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Show/hide text based on sidebar state */
+.sidebar nav ul li a span {
+  margin-left: 10px;
+  display: none; /* Hide text when sidebar is closed */
+}
+
+.sidebar.open nav ul li a span {
+  display: inline; /* Show text when sidebar is open */
+}
+
+/* Menu icon styling */
+.menu-icon {
+  font-size: 24px;
+}
+.content {
+  /* padding: 1em; */
+}
+
+/* Content Container */
+.content-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: #f8fafc;
+  transition: margin-left 0.3s ease;
+  margin-left: 56px;
+}
+
+.content-container.shifted {
+  margin-left: 236px; /* Adjust margin when sidebar is open */
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+  position: absolute;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+
+  background: #fff;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  right: -8px; /* Adjust based on your layout */
+  cursor: pointer;
+  z-index: 1000; /* Ensure the hamburger icon is on top */
+}
+
+.hamburger svg {
+  color: #000;
+  font-size: 16px;
+}
+
+.plot-container .user-select-none {
+  width: auto !important;
+}
+.js-plotly-plot {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 31px 0px #2c323f1a;
+}
+.ag-header,
+.ag-root-wrapper {
+  border: none !important;
+}
+
+.data-grid .ag-grid-container {
+  height: 100%;
+  max-height: 400px; /* Set a maximum height for the grid */
+  overflow: auto; /* Enable both vertical and horizontal scroll */
+}
+
+/* Vertical Scrollbar for ag-Grid */
+.ag-body-viewport::-webkit-scrollbar {
+  width: 7px;
+}
+
+.ag-body-viewport::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ag-body-viewport::-webkit-scrollbar-thumb {
+  background: #0070ad;
+  border-radius: 10px;
+}
+
+.ag-body-viewport::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Horizontal Scrollbar in ag-Grid */
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar {
+  height: 7px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb {
+  background: #0070ad;
+  border-radius: 10px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Container styling */
+.ag-grid-container {
+  height: 400px; /* Fixed height for vertical scroll */
+  width: 100%; /* Full width */
+  overflow: auto; /* Enable overflow for scrolling */
+}
+
+/* Vertical Scrollbar for ag-Grid */
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar {
+  width: 7px;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb {
+  background: #0070ad;
+  border-radius: 10px;
+}
+
+.ag-body-vertical-scroll-viewport::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Horizontal Scrollbar in ag-Grid */
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar {
+  height: 7px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb {
+  background: #0070ad;
+  border-radius: 10px;
+}
+
+.ag-body-horizontal-scroll-viewport::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.js-plotly-plot {
+  border: none;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: none;
+}
